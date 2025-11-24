@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List App</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1><i class="fa-solid fa-list-check"></i> To-Do List</h1>
+    <p>Manage your tasks efficiently & stay organized!</p>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <div class="todo-container">
+      <input type="text" id="input" placeholder="Enter a task..." />
+      <button id="add-btn" onclick="add()"><i class="fa-solid fa-plus"></i> Add</button>
+      <ul id="list-container">
+        <li>Welcome! Add your first task
+          <button class="delete-btn" onclick="deleteItem(event)">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Contact Me</h3>
+    <div class="footer-links">
+      <a href="mailto:adhavangovi@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+      <a href="https://github.com/Adhavan-G-tech" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/adhavan-g-10m" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </div>
+    <p>© 2025 Adhavan G | Built with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Switcher</title>
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  >
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!--Header-->
+  <header>
+    <h1>Text Switcher</h1>
+    <p>This project changes the displayed text based on which button you click.</p>
+  </header>
+
+  <!-- Main Section-->
+  <main>
+    <div class="container">
+      <h1 id="result">Name</h1>
+
+      <div class="btn-group">
+        <button id="one" onclick="update(event)">Adhav</button>
+        <button id="two" onclick="update(event)">Dhoni</button>
+        <button id="three" onclick="update(event)">Chennai</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Thank you for visiting!</h3>
+    <div class="footer-links">
+      <a href="mailto:adhavangovi@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+      <a href="https://github.com/Adhavan-G-tech"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/adhavan-g-10m"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- my js -->
+  <script src="script.js"></script>
+</body>
+
+</html>

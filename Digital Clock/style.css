@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #000428, #004e92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.title {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #00e6ff;
+  text-shadow: 0 0 15px #00e6ff, 0 0 25px #00e6ff;
+  letter-spacing: 3px;
+  animation: glowTitle 2s infinite alternate;
+}
+
+.clock {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 50px 80px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  transition: all 0.4s ease;
+}
+
+.clock:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.6);
+}
+
+#time {
+  display: block;
+  font-size: 70px;
+  font-weight: bold;
+  color: #00ffff;
+  text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  letter-spacing: 3px;
+}
+
+#date {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #dcdcdc;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+@keyframes glowTitle {
+  from {
+    text-shadow: 0 0 10px #00e6ff, 0 0 20px #00e6ff;
+  }
+  to {
+    text-shadow: 0 0 25px #00ffff, 0 0 50px #00ffff;
+  }
+}

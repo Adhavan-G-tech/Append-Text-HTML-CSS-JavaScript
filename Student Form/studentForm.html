@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student | Form</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1><i class="fa-solid fa-user-graduate"></i> Student Registration Form</h1>
+    <p>Fill out the form below and save your student details easily.</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <form id="studentForm">
+        <div class="input-group">
+          <label>Name</label>
+          <input type="text" id="name" placeholder="Enter full name" required>
+        </div>
+
+        <div class="input-group">
+          <label>Age</label>
+          <input type="number" id="age" placeholder="Enter age" required>
+        </div>
+
+        <div class="input-group">
+          <label>Gender</label>
+          <div class="radio-group">
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Female" required> Female</label>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" id="email" placeholder="Enter email" required>
+        </div>
+
+        <button type="submit" id="saveBtn"><i class="fa-solid fa-floppy-disk"></i> Save</button>
+      </form>
+    </section>
+
+    <section class="table-section">
+      <h2>Student Details</h2>
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- Added data appears here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed by <strong>Adhavan G</strong> | <i class="fa-solid fa-envelope"></i> adhavangovi@gmail.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

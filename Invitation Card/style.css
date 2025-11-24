@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  color: #333;
+  padding: 20px;
+}
+
+.invitation {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.header h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  color: #d63384;
+}
+
+.header span {
+  color: #ff477e;
+}
+
+.header p {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #444;
+}
+
+.heart {
+  color: #ff477e;
+  font-size: 1.5rem;
+  margin: 5px;
+}
+
+.details {
+  margin-top: 20px;
+  background: #fff6f8;
+  border-radius: 10px;
+  padding: 15px;
+  line-height: 1.8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details h2 {
+  color: #c2185b;
+  margin-bottom: 10px;
+}
+
+.blessing {
+  margin-top: 25px;
+  font-style: italic;
+  color: #6a1b9a;
+}
+
+.bless {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.rsvp {
+  margin-top: 20px;
+  background: #ff5e9c;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rsvp:hover {
+  background: #e91e63;
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+footer a {
+  color: #e91e63;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 2.2rem;
+  }
+  .details {
+    font-size: 0.95rem;
+  }
+}
